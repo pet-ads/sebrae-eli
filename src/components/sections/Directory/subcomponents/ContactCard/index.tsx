@@ -36,8 +36,6 @@ export default function ContactCard({
         {linkedinUrl && (
           <SocialLink
             href={linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             aria-label={`Perfil no LinkedIn de ${name}`}
           >
             <img src={LinkedInIcon} alt="LinkedIn" width={20} height={20} />

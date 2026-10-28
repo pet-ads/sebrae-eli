@@ -33,7 +33,7 @@ export const Bio = styled.p`
   color: #475569;
   line-height: 1.55;
   margin: 0 0 20px 0;
-  flex-grow: 1; /* Garante que o rodapé alinhe perfeitamente na base */
+  flex-grow: 1;
 `;
 
 export const Footer = styled.footer`
@@ -52,7 +52,6 @@ export const Organization = styled.span`
   display: inline-block;
   padding-bottom: 3px;
 
-  /* Linha verde característica do design */
   &::after {
     content: "";
     position: absolute;
@@ -76,8 +75,4 @@ export const SocialLink = styled.a`
     opacity: 0.7;
   }
 
-  svg {
-    width: 20px;
-    height: 20px;
-  }
 `;
