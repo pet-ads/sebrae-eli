@@ -1,10 +1,23 @@
-import "./App.css";
+import ContactCard from './components/sections/Directory/subcomponents/ContactCard';
+import { CONTACTS_DATA } from './assets/content/contacts';
 
-function App() {
-
+export function App() {
   return (
-    <h1>Hello world</h1>
-  )
+    <>
+      {CONTACTS_DATA.map((item) => (
+        <ContactCard
+          key={item.id}
+          badge={item.badge}
+          name={item.name}
+          role={item.role}
+          bio={item.bio}
+          organization={item.organization}
+          avatarUrl={item.avatarUrl}
+          linkedinUrl={item.linkedinUrl}
+        />
+      ))}
+    </>
+  );
 }
 
-export default App
+export default App;
