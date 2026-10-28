@@ -3,11 +3,11 @@ import Avatar from "../../../../commons/toolkit/Avatar";
 import Badge from "../../../../commons/toolkit/Badge";
 import type { ContactItem } from "../../../../../assets/content/contacts";
 import {Header, HeaderInfo, Footer, Name, Role, Bio, Organization, SocialLink} from "./styles";
-import LinkedInIcon from "@/assets/icons/linkedin.svg";
+import LinkedInIcon from "../../../../../assets/icon/contact/linkedin.svg";
 
 type ContactCardProps = Omit<ContactItem, "id" | "categoryId">;
 
-export function ContactCard({
+export default function ContactCard({
   badge,
   avatarUrl,
   name,

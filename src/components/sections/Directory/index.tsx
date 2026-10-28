@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Tabs from "../../commons/toolkit/Tabs";
-import { ContactCard } from "./subcomponents/ContactCard";
+import ContactCard from "./subcomponents/ContactCard";
 import { CATEGORIES_DATA } from "../../../assets/content/categories";
 import { CONTACTS_DATA } from "../../../assets/content/contacts";
 import * as S from "./styles";
